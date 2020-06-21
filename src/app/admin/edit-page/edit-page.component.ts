@@ -1,5 +1,5 @@
 import {Component, OnDestroy, OnInit} from '@angular/core'
-import {ActivatedRoute, Params} from '@angular/router'
+import {ActivatedRoute, Params, Router} from '@angular/router'
 import {PostsService} from '../../shared/posts.service'
 import {switchMap} from 'rxjs/operators'
 import {Post} from '../../shared/interfaces'
@@ -24,6 +24,7 @@ export class EditPageComponent implements
 
   constructor(
     private route: ActivatedRoute,
+    private router: Router,
     private postsService: PostsService,
     private alertService: AlertService
   ) {}
@@ -55,6 +56,7 @@ export class EditPageComponent implements
     }).subscribe(() => {
       this.submitted = false
       this.alertService.success('Post has been refresh')
+      this.router.navigate(['/admin', 'dashboard'])
     }, () => this.submitted = false)
   }
 
