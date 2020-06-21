@@ -1,6 +1,6 @@
 # AngularBlog
 
-[Link]()
+[there should be a link, but she is empty now]() 
 
 ## Development server
 
