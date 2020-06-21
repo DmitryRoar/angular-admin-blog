@@ -1,6 +1,6 @@
 # AngularBlog
 
-[Link](https://angular-blog-fdb13.web.app/)
+[Link]()
 
 ## Development server
 
