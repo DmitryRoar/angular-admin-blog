@@ -1,6 +1,6 @@
 # AngularBlog
 
-[there should be a link, but she is empty now]() 
+[project link](https://admin-blog-9c738.web.app/) 
 
 ## Development server
 
